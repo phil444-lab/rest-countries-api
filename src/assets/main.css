@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --color-neutral-blue-900: hsl(209, 23%, 22%);
+  --color-neutral-blue-950: hsl(207, 26%, 17%);
+  --color-neutral-grey-950: hsl(200, 15%, 8%);
+  --color-neutral-grey-400: hsl(0, 0%, 50%);
+  --color-neutral-grey-50: hsl(0, 0%, 99%);
+  --color-neutral-white: hsl(0, 100%, 100%);
+
+  --font-family-base: 'Nunito Sans', sans-serif;
+  --font-size-homepage: 14px;
+  --font-size-detail: 16px;
+
+  --font-weight-light: 300;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 800;
+
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+}
+
+body {
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-homepage);
+  font-weight: var(--font-weight-light);
+  color: var(--color-neutral-grey-950);
+  background-color: var(--color-neutral-grey-50);
+}
+
+a {
+  color: var(--color-neutral-blue-900);
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-neutral-blue-950);
+}
