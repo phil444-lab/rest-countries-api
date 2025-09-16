@@ -98,7 +98,7 @@ body.dark .input-icon {
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: all 0.2s ease;
-  z-index: 20;   
+  z-index: 20;
 }
 
 body.dark .dropdown-menu {
@@ -168,4 +168,30 @@ body.dark .dropdown-item.active {
 .dropdown-transition-leave-from {
   opacity: 1;
   transform: scale(1);
+}
+
+/* country */
+.country-card {
+  cursor: pointer;
+  background-color: var(--color-neutral-white);
+  color: var(--color-neutral-grey-950);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.country-card:hover {
+  transform: scale(1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+body.dark .country-card {
+  background-color: var(--color-neutral-blue-900);
+  color: var(--color-neutral-white);
+}
+
+@media (max-width: 375px) {
+  .country-card {
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
