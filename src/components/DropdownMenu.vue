@@ -6,13 +6,13 @@
     modelValue: String,
     regions: {
       type: Array,
-      default: () => ["Africa", "America", "Asia", "Europe", "Oceania"]
+      default: () => ["All", "Africa", "America", "Asia", "Europe", "Oceania"]
     }
   })
   const emit = defineEmits(["update:modelValue"])
 
   const selectRegion = (region) => {
-    emit("update:modelValue", region)
+    emit("update:modelValue", region === "All" ? "" : region)
   }
 </script>
 
